@@ -1,0 +1,48 @@
+airline-management-system/
+│
+├── src/                           # Source code for the application
+│   ├── com/                       # Base package for the project
+│   │   ├── airline/               # Core functionality for the airline management system
+│   │   │   ├── admin/             # Admin-related classes
+│   │   │   │   ├── AdminLogin.java    # Admin login logic
+│   │   │   │   ├── AdminDashboard.java # Admin dashboard interface
+│   │   │   │   ├── FlightManagement.java # Add/Edit/Delete Flight details
+│   │   │   │   ├── EmployeeManagement.java # Manage employees
+│   │   │   │   └── ReportGeneration.java # Generate reports
+│   │   │   │
+│   │   │   ├── employee/          # Employee-related classes
+│   │   │   │   ├── EmployeeLogin.java   # Employee login logic
+│   │   │   │   ├── EmployeeDashboard.java # Employee dashboard interface
+│   │   │   │   ├── PassengerManagement.java # Add/Update passenger details
+│   │   │   │   ├── FlightBooking.java    # Book flights
+│   │   │   │   ├── FlightCancellation.java # Cancel flights
+│   │   │   │   ├── FlightBillGeneration.java # Generate flight bills
+│   │   │   │   └── FlightManagement.java # Manage flight journeys and zones
+│   │   │   │
+│   │   │   ├── database/           # Database-related classes
+│   │   │   │   ├── DBConnection.java    # Connect to the MySQL database
+│   │   │   │   └── Queries.java        # Store SQL queries for various operations
+│   │   │   │
+│   │   │   ├── models/              # Data models for the application
+│   │   │   │   ├── Flight.java       # Flight model
+│   │   │   │   ├── Employee.java     # Employee model
+│   │   │   │   ├── Passenger.java    # Passenger model
+│   │   │   │   └── Booking.java      # Booking model
+│   │   │   │
+│   │   │   ├── utils/               # Utility classes
+│   │   │   │   ├── Validator.java   # Data validation utilities
+│   │   │   │   └── Utils.java       # General utility functions
+│   │   │   │
+│   │   │   └── main/                # Main entry point and application launcher
+│   │   │       └── Main.java        # Main class to run the application
+│   │   │
+│   └── resources/                   # Resources for the application (icons, images, etc.)
+│       ├── images/                  # Icons, images for GUI
+│       ├── config/                  # Configuration files (e.g., database config)
+│       └── styles/                  # CSS/Styles for GUI (if needed)
+│
+├── database/                        # Folder for SQL-related files
+│   └── airline_db.sql               # SQL schema and initial data
+│
+├── lib/                             # External libraries (JAR files for MySQL JDBC, etc.)
+│   └── mysql-connector-java-x.x.x.jar   # MySQL JDBC connector JAR
