@@ -1,4 +1,4 @@
-package airlinemanagementsystem;
+package AWS;
 
 import javax.swing.*;
 import java.awt.*;
